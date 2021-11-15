@@ -51,8 +51,7 @@ test:
 production:
   <<: *default
   database: task_app_production
-  username: <%= ENV['TASK_APP_DATABASE_USERNAME'] %>
-  password: <%= ENV['TASK_APP_DATABASE_PASSWORD'] %>
-  # host : <%= ENV['TASK_APP_DATABASE_HOST'] %>
-  host : db-raisetech.cjpmjtjfwhvu.ap-northeast-1.rds.amazonaws.com
+  username: <%= ENV['RUBY_APP_DATABASE_USERNAME'] %>
+  password: <%= ENV['RUBY_APP_DATABASE_PASSWORD'] %>
+  host : <%= ENV['RUBY_APP_DATABASE_HOST'] %>
   
